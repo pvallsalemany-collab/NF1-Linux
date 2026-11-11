@@ -9,4 +9,4 @@ sudo apt update
 sudo apt install cockpit
 ```
 Resultat:
-![sudo apt update]()
+![sudo apt update](img/)
