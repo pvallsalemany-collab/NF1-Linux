@@ -26,3 +26,17 @@ M'ha demanat la contrasenya i he agregat el **-y** perquè no salti la pregunta 
 sudo systemctl status cockpit.socket
 ```
 ![sudo systemctl status cockpit-socket](img/sudo_systemctl_status_cockpit.socket.png)
+
+2. Comprovo quina IP tinc executant:
+```
+ip a
+```
+![ip a saber la ip](img/ip_a.png)
+
+
+
+L'adaptador amfitrió està en la nterfície enp0s8 i la seva IP és la **192.168.56.111** <br>
+3. He entrat a Cockpit desde del ordinador real posant l'enllaç https://[la meva IP del **l'adaptador només amfitrió**]:[Port per defecte]
+```
+https://192.168.56.111:9090
+```
