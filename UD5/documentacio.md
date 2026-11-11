@@ -7,6 +7,22 @@ La eina que s'usarà per aques treball es el **Cockpit**
 ```
 sudo apt update
 sudo apt install cockpit
+sudo apt upgrade
 ```
-Resultat:
+Resultat: <br>
+![sudo apt update](img/sudo_apt_update.png)
 
+Em surten menys coses perquè es la segona vegada que he fet update, degut a que abans havia d'instalar i habilitar el ssh
+
+- Ara  instal·lo el **Cockpit** <br>
+![comanda d'instal·lació Cockpit](img/instal·lació_Cockpit.png) <br>
+M'ha demanat la contrasenya i he agregat el **-y** perquè no salti la pregunta de confirtmació.
+
+- Després he executat: sudo apt upgrade a dins de Ubuntu directament <br>
+![Comanda d'actualització de programes](img/sudo_apt_upgrade.png)
+
+- Comprova si està activa <br>
+```
+sudo systemctl status cockpit.socket
+```
+![sudo systemctl status cockpit-socket](img/sudo_systemctl_status_cockpit.socket.png)
